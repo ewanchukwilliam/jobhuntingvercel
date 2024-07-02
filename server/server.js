@@ -1,5 +1,5 @@
 const express = require("express");
-const mysql = require("mysql");
+const mysql = require("mysql2");
 const cors = require("cors");
 const path = require("path");
 const { format } = require("date-fns");
@@ -14,7 +14,7 @@ const port = 5000;
 
 const db = mysql.createConnection({
 	host: "localhost",
-	user: "root",
+	user: "william",
 	password: "Penisbutt123!",
 	database: "JobHunting",
 });
